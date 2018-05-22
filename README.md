@@ -1,7 +1,7 @@
 # Night Owl syntax theme
 
 Port of Night Owl by Sarah Drasner
-
+https://marketplace.visualstudio.com/items?itemName=sdras.night-owl&WT.mc_id=twitter-social-sdras
 
 ## Screenshot
 
@@ -16,5 +16,4 @@ Night Owl port by [CragVFX](https://github.com/CragVFX),
 
 ## License
 
-There were no licenses attached to the original works, so this here port falls
-under the WTFPL.
+There were no licenses.
