@@ -5,7 +5,7 @@ https://marketplace.visualstudio.com/items?itemName=sdras.night-owl&WT.mc_id=twi
 
 ## Screenshot
 
-<!-- ![Screenshot of theme showing Ruby code]() -->
+![Screenshot of theme showing Vue sample](night-owl-vs-code-syntax.png)
 
 
 ## Developers
