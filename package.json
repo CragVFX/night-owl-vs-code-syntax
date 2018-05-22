@@ -1,5 +1,5 @@
 {
-  "name": "night-owl-syntax",
+  "name": "night-owl-vs-code-syntax",
   "theme": "syntax",
   "version": "0.3.0",
   "description": "tried to make night owl for atom",
@@ -7,7 +7,7 @@
     "ui",
     "theme"
   ],
-  "repository": "https://github.com/CragVFX/night-owl-syntax",
+  "repository": "https://github.com/CragVFX/night-owl-vs-code-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
