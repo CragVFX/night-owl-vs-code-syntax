@@ -1,7 +1,7 @@
 {
   "name": "night-owl-vs-code-syntax",
   "theme": "syntax",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "tried to make night owl for atom",
   "keywords": [
     "ui",
