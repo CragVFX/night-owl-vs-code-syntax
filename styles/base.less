@@ -85,11 +85,11 @@ atom-text-editor.is-focused .line.cursor-line {
 }
 
 .syntax--constant {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .syntax--entity {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .syntax--keyword {
@@ -101,15 +101,70 @@ atom-text-editor.is-focused .line.cursor-line {
 }
 
 .syntax--string {
-  color: #ecc48d;
+  color: @syntax-color-string;
 }
 
 .syntax--support {
   color: #addb67;
 }
 
+.syntax--string.syntax--unquoted.syntax--js {
+  color: #d7dbe0;
+}
+
+.syntax--meta.syntax--function .syntax--variable {
+  color: @syntax-color-string;
+}
+
+.syntax--meta.syntax--function.syntax--method.syntax--js
+  > .syntax--variable.syntax--other.syntax--readwrite.syntax--js
+  + .syntax--meta.syntax--delimiter.syntax--comma.syntax--js
+  + .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
+  color: @syntax-color-function !important;
+}
+
+.syntax--meta.syntax--brace.syntax--curly.syntax--js + .syntax--variable {
+  color: @syntax-color-function;
+}
+
+.syntax--readwrite.syntax--js,
+.syntax--this.syntax--js {
+  color: @syntax-color-prop;
+}
+.syntax--module + .syntax--readwrite.syntax--js {
+  color: @syntax-color-string !important;
+}
+
+.syntax--quoted {
+  color: @syntax-color-quoted;
+}
+
+.syntax--support.syntax--component,
+.syntax--class.syntax--js.syntax--name.syntax--entity {
+  color: @syntax-color-support-component;
+}
+
+.syntax--operator.syntax--accessor.syntax--js
+  + .syntax--entity.syntax--name.syntax--class {
+  color: @syntax-color-attr;
+}
+
+.syntax--expression.syntax--js .syntax--embedded.syntax--begin,
+.syntax--expression.syntax--js .syntax--embedded.syntax--end {
+  color: @syntax-color-null;
+}
+
+.syntax--entity.syntax--jsx {
+  color: @syntax-color-entity;
+}
+
 .syntax--variable {
-  color: #c792ea;
+  color: @syntax-color-variable;
+}
+
+.syntax--null.syntax--js,
+.syntax--boolean.syntax--js {
+  color: @syntax-color-null;
 }
 
 .syntax--storage.syntax--type.syntax--const.syntax--js {
@@ -136,7 +191,7 @@ atom-text-editor.is-focused .line.cursor-line {
 }
 
 .syntax--entity.syntax--name {
-    color: #5f7e97;
+  color: #5f7e97;
 }
 
 .syntax--punctuation.syntax--definition.syntax--bracket.syntax--curly.syntax--end.syntax--jsdoc {
@@ -160,11 +215,11 @@ atom-text-editor.is-focused .line.cursor-line {
 }
 
 .syntax--punctuation.syntax--terminator.syntax--statement.syntax--js {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .syntax--support.syntax--function {
-    color: #addb67;
+  color: #addb67;
 }
 
 .syntax--keyword.syntax--operator.syntax--new.syntax--js {
@@ -180,7 +235,7 @@ atom-text-editor.is-focused .line.cursor-line {
 }
 
 .syntax--constant.syntax--numeric {
-    color: #f78c6c;
+  color: #f78c6c;
 }
 
 .syntax--meta.syntax--delimiter.syntax--method.syntax--period.syntax--js {
@@ -188,7 +243,7 @@ atom-text-editor.is-focused .line.cursor-line {
 }
 
 .syntax--meta.syntax--delimiter.syntax--object.syntax--comma.syntax--js {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .syntax--support.syntax--variable.syntax--property.syntax--dom.syntax--js {
@@ -197,7 +252,7 @@ atom-text-editor.is-focused .line.cursor-line {
 }
 
 .syntax--variable.syntax--parameter.syntax--function.syntax--js {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .syntax--punctuation.syntax--section.syntax--embedded.syntax--js {
@@ -205,7 +260,7 @@ atom-text-editor.is-focused .line.cursor-line {
 }
 
 .syntax--variable.syntax--other.syntax--object.syntax--js {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .syntax--string.syntax--quoted.syntax--template.syntax--js {
@@ -232,11 +287,11 @@ atom-text-editor.is-focused .line.cursor-line {
 }
 
 .syntax--bracket.syntax--curly {
-    color: #d7dbe0;
+  color: #d7dbe0;
 }
 
 .syntax--invalid {
-  color: #EF5350;
+  color: #ef5350;
 }
 
 .syntax--entity.syntax--name.syntax--tag {
