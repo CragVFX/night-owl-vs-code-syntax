@@ -112,6 +112,21 @@ atom-text-editor.is-focused .line.cursor-line {
   color: #d7dbe0;
 }
 
+.syntax--meta.syntax--function .syntax--variable {
+  color: @syntax-color-string;
+}
+
+.syntax--meta.syntax--function.syntax--method.syntax--js
+  > .syntax--variable.syntax--other.syntax--readwrite.syntax--js
+  + .syntax--meta.syntax--delimiter.syntax--comma.syntax--js
+  + .syntax--variable.syntax--other.syntax--readwrite.syntax--js {
+  color: @syntax-color-function !important;
+}
+
+.syntax--meta.syntax--brace.syntax--curly.syntax--js + .syntax--variable {
+  color: @syntax-color-function;
+}
+
 .syntax--readwrite.syntax--js,
 .syntax--this.syntax--js {
   color: @syntax-color-prop;
